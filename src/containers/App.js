@@ -109,8 +109,8 @@ function App() {
     <Container>
       <Form validated={validated} onSubmit={handleSubmit}>
         <Form.Row style={styles}>
-          <Col><TargetSquadOVR value={targetOVR} onchange={(e) => setTargetOVR(Number(e.target.value))} /></Col>
-          <Col><RangeOVR interval={intervalOVR} onchange={(e) => setIntervalOVR({ ...intervalOVR, [e.target.name]: Number(e.target.value) })} /></Col>
+          <Col><TargetSquadOVR value={targetOVR} onchange={(e) => setTargetOVR((e.target.value === '') ? '' : Number(e.target.value))} /></Col>
+          <Col><RangeOVR interval={intervalOVR} onchange={(e) => setIntervalOVR({ ...intervalOVR, [e.target.name]: (e.target.value === '') ? '' : Number(e.target.value) })} /></Col>
         </Form.Row>
         <AvailablesOVR fixed={currentList} onchange={(e) => {
           const auxList = [...currentList];

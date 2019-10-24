@@ -12,8 +12,8 @@ export default function RangeOVR(props) {
             <Card.Body>
                 <Form.Label>Player ratings to try (Min/Max)</Form.Label>
                 <Form.Row>
-                    <Col><Form.Control type="text" pattern="[0-9]*" value={props.interval.min} style={inputStyles} min='60' max='99' step='1' name='min' onChange={props.onchange} required /></Col>
-                    <Col><Form.Control type="text" pattern="[0-9]*" value={props.interval.max} style={inputStyles} min={props.interval.min} max='99' name='max' step='1' onChange={props.onchange} required /></Col>
+                    <Col><Form.Control type="number" pattern="[0-9]*" value={props.interval.min} style={inputStyles} min='60' max='99' step='1' name='min' onChange={props.onchange} required /></Col>
+                    <Col><Form.Control type="number" pattern="[0-9]*" value={props.interval.max} style={inputStyles} min={props.interval.min} max='99' name='max' step='1' onChange={props.onchange} required /></Col>
                 </Form.Row>
             </Card.Body>
         </Card>

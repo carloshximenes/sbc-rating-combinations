@@ -11,7 +11,7 @@ export default function TargetSquadOVR(props) {
             <Card.Body>
                 <Form.Row>
                     <Form.Label>Enter the target squad rating</Form.Label>
-                    <Form.Control type="text" pattern="[0-9]*" value={props.value} style={inputStyles} min='60' max='99' onChange={props.onchange} required/>
+                    <Form.Control type="number" pattern="[0-9]*" value={props.value} style={inputStyles} min='60' max='99' onChange={props.onchange} required/>
                 </Form.Row>
             </Card.Body>
         </Card>
