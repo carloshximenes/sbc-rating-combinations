@@ -7,7 +7,7 @@ export default function Header() {
             <Navbar.Brand>
                 <img
                     alt=""
-                    src="/images/logo192.png"
+                    src="images/logo192.png"
                     width="30"
                     height="30"
                     className="d-inline-block align-top"
